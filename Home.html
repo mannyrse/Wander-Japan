@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Wander Japan</title>
+    <link rel="stylesheet" href="CSS/StyleHome.css">
+</head>
+
+<body>
+    <!-- header -->
+    <section class="showcase">
+        <header>
+            <h2 class="logo"><a href="Home.html">Wander JP</a></h2>
+            <div class="toggle"></div>
+        </header>
+
+        <video src="Videos/backgroundvideo.mp4" muted loop autoplay></video>
+
+        <!-- overlay above the video bg -->
+        <div class="overlay"></div>
+        <!-- main header/logo text -->
+        <div class="text">
+            <h2>Wander Japan</h2>
+            <h3>ワンダージャパン</h3>
+
+            <a href="Explore.html">Explore</a>
+
+        </div>
+
+    </section>
+    <!-- menu for other pages -->
+
+    <div class="menu">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Explore.html">Explore</a></li>
+            <li><a href="Updates.html">Updates</a></li>
+            <li><a href="About.html">About</a></li>
+        </ul>
+    </div>
+
+    <div>
+        <script>
+            const menuToggle = document.querySelector('.toggle')
+            const showcase = document.querySelector('.showcase')
+
+            menuToggle.addEventListener('click', () => {
+                menuToggle.classList.toggle('active')
+                showcase.classList.toggle('active')
+            })
+        </script>
+    </div>
+</body>
+
+</html>
